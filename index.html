@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Resistencias</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Calculadora</a></li>
+      <li><a href="https://www.yoigoluzygas.com/blog/como-funciona-una-resistencia-electrica-tipos-y-usos/">Teoría</a>
+      </li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <h1>Calculadora de Resistencias</h1>
+
+  <div class="contenedor-principal">
+
+    <!-- === TARJETA CALCULADORA === -->
+    <div class="card calculadora">
+      <div class="resistor-flat">
+        <div class="lead left"></div>
+        <div class="body">
+          <div id="b1" class="band"></div>
+          <div id="b2" class="band"></div>
+          <div id="b3" class="band"></div>
+          <div id="bTol" class="band"></div>
+        </div>
+        <div class="lead right"></div>
+      </div>
+
+      <div class="inputs">
+        <label>Banda 1:</label>
+        <select id="banda1"></select>
+
+        <label>Banda 2:</label>
+        <select id="banda2"></select>
+
+        <label>Multiplicador:</label>
+        <select id="multi"></select>
+
+        <label>Tolerancia:</label>
+        <select id="tol">
+          <option value="gold" style="background-color:#d4af37;color:black;">Dorado (±5%)</option>
+          <option value="silver" style="background-color:#c0c0c0;color:black;">Plateado (±10%)</option>
+        </select>
+      </div>
+
+      <button id="btnCalcular">Calcular</button>
+
+      <div id="resultado">
+        <p><strong>Valor:</strong> -</p>
+        <p><strong>Mínimo:</strong> -</p>
+        <p><strong>Máximo:</strong> -</p>
+      </div>
+    </div>
+
+    <!-- === TARJETA 2 === -->
+    <div class="card info">
+      <img src="img/Resistencia electrica y potenciometro (1).webp" class="card-img-top" alt="Electrónica">
+      <div class="card-body">
+        <h5 class="card-title">¿Que es una resistencia?</h5>
+        <p class="card-text">La resistencia eléctrica es la oposición que presenta un conductor al paso de la corriente
+          eléctrica, es decir, la dificultad que ofrece un material para que los electrones circulen a través de él.
+          Esta propiedad se mide en ohmios (Ω), una unidad que lleva el nombre del físico alemán Georg Simon Ohm, quien
+          formuló la ley que lleva su nombre.
+          La resistencia depende de varios factores,el tipo de material destá hecho el conductor...</p>
+        <a href="https://es.wikipedia.org/wiki/Resistencia_el%C3%A9ctrica" class="btn btn-primary">Leer mas</a>
+      </div>
+    </div>
+
+    <!-- === TARJETA 3 === -->
+    <div class="card info">
+      <img src="img/TABLA3.webp" class="card-img-top" alt="Servicios Técnicos">
+      <div class="card-body">
+        <h5 class="card-title">Tabla de resistencia</h5>
+        <p class="card-text">Una tabla de valores de resistencia utiliza un código de colores para identificar la
+          resistencia eléctrica de un componente. Las bandas de colores representan cifras, multiplicadores y
+          tolerancia, lo que permite calcular su valor en ohmios (\(\Omega \)). Por ejemplo, una resistencia con las
+          bandas marrón, negra, roja y dorada tendría un valor de \(10\times 10^{2}\) ohmios con una tolerancia del 5 %
+          Cómo usar la tabla de colores
+          Primeras dos (o tres) bandas...
+        </p>
+        <a href="http://peponcito.informaticacotidiana.com/2023/04/26/electronica-basica-las-resistencias/"
+          class="btn btn-primary">Leer mas</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Calculadora de Resistencias | Todos los derechos reservados</p>
+      <div class="footer-links">
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Términos de Servicio</a>
+        <a href="#">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
