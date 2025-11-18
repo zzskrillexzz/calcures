@@ -29,7 +29,7 @@ const b3 = document.getElementById("b3");
 const bTol = document.getElementById("bTol");
 const resultado = document.getElementById("resultado");
 
-// === LLENAR SELECTS (excepto tolerancia) ===
+// llenar select
 function llenarSelect(select, lista) {
   const defaultOpt = document.createElement("option");
   defaultOpt.textContent = "-- Seleccionar --";
@@ -50,7 +50,7 @@ llenarSelect(banda1, colores);
 llenarSelect(banda2, colores);
 llenarSelect(multi, multiplicadores);
 
-// === CAMBIAR COLORES AUTOMÁTICAMENTE ===
+// cambiar colores automatico
 banda1.addEventListener("change", () => actualizarColor(b1, banda1, colores));
 banda2.addEventListener("change", () => actualizarColor(b2, banda2, colores));
 multi.addEventListener("change", () => actualizarColor(b3, multi, multiplicadores));
@@ -65,7 +65,7 @@ function actualizarColor(bandaElem, selectElem, lista) {
   bandaElem.style.backgroundColor = colorSel ? colorSel.color : "transparent";
 }
 
-// === CALCULAR ===
+// calcular
 function calcular() {
   const c1 = colores.find(c => c.nombre === banda1.value);
   const c2 = colores.find(c => c.nombre === banda2.value);
@@ -98,3 +98,4 @@ function formatear(valor) {
 }
 
 document.getElementById("btnCalcular").addEventListener("click", calcular);
+
