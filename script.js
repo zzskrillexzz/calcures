@@ -92,12 +92,14 @@ function calcular() {
 }
 
 function formatear(valor) {
+  if (valor >= 1e9) return (valor / 1e9).toFixed(2) + " GΩ";
   if (valor >= 1e6) return (valor / 1e6).toFixed(2) + " MΩ";
   if (valor >= 1e3) return (valor / 1e3).toFixed(2) + " kΩ";
   return valor + " Ω";
 }
 
 document.getElementById("btnCalcular").addEventListener("click", calcular);
+
 
 
 
