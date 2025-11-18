@@ -73,7 +73,7 @@ function calcular() {
   const t = tol.value;
 
   if (!c1 || !c2 || !m || !t) {
-    resultado.innerHTML = "<p style='color:red;'>⚠️ Completa todos los campos para calcular.</p>";
+    resultado.innerHTML = "<p style='color:red;'> Completa todos los campos para calcular.</p>";
     return;
   }
 
@@ -98,4 +98,5 @@ function formatear(valor) {
 }
 
 document.getElementById("btnCalcular").addEventListener("click", calcular);
+
 
