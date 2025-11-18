@@ -86,8 +86,8 @@ function calcular() {
 
   resultado.innerHTML = `
     <p><strong>Valor:</strong> ${formatear(valor)} (±${tolPorc}%)</p>
-    <p><strong>Mínimo:</strong> ${formatear(min)}</p>
-    <p><strong>Máximo:</strong> ${formatear(max)}</p>
+    <p><strong>T. Mínimo:</strong> ${formatear(min)}</p>
+    <p><strong>T. Máximo:</strong> ${formatear(max)}</p>
   `;
 }
 
@@ -98,5 +98,6 @@ function formatear(valor) {
 }
 
 document.getElementById("btnCalcular").addEventListener("click", calcular);
+
 
 
