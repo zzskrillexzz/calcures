@@ -369,7 +369,7 @@ footer {
     font-size: 13px;
   }
 }
-/* ======== PÁGINA DE CONTACTO ======== */
+/*PÁGINA DE CONTACTO*/
 .contacto-container {
   max-width: 700px;
   margin: 60px auto;
@@ -449,7 +449,7 @@ footer {
   background-color: #43a047;
 }
 
-/* ===== RESPONSIVE ===== */
+/*RESPONSIVE */
 @media (max-width: 768px) {
   .contacto-container {
     width: 90%;
@@ -464,3 +464,4 @@ footer {
     font-size: 15px;
   }
 }
+
